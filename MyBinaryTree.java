@@ -26,7 +26,7 @@ public class MyBinaryTree<K extends Comparable<K>> {
 	    }
 	    private int getsizeRecursively(MyBinaryNode<K> current) {
 	    	return current == null ? 0 : 1 + this.getsizeRecursively(current.left)
-	    	                               + this.getsizeRecursively(current.left);
+	    	                               + this.getsizeRecursively(current.right);
 	    }
 	    public void print() {
 	        print(root);
